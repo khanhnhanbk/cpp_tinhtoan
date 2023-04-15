@@ -11,8 +11,6 @@ int main()
     int n;
     cin >> n;
 
-
-
     if (n < 1)
     {
         cout << "Invalid";
@@ -25,7 +23,7 @@ int main()
     {
         cout << 2;
     }
-    else 
+    else
     {
         int f_n1 = 2; // f2 // f(n-1)
         int f_n2 = 1; // f1    f(n-2)
@@ -33,11 +31,10 @@ int main()
         int f;
         for (int i = 3; i <= n; i++) // index 4
         {
-            f = (3) * f_n1 + (-2) * f_n2 ; // f4
-            f_n2 = f_n1; // f2
-            f_n1 = f; // f3
+            f = (3) * f_n1 + (-2) * f_n2; // f4
+            f_n2 = f_n1;                  // f2
+            f_n1 = f;                     // f3
         }
-
         cout << f;
     }
 
